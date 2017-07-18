@@ -1,0 +1,35 @@
+[base]
+name=CentOS Base
+baseurl=http://openstack:8080/base/
+gpgcheck=0
+enabled=1
+
+[updates]
+name=CentOS Updates
+baseurl=http://openstack:8080/updates/
+gpgcheck=0
+enabled=1
+
+[extras]
+name=CentOS Extras
+baseurl=http://openstack:8080/extras/
+gpgcheck=0
+enabled=1
+
+[epel]
+name=Extra Packages for Enterprise Linux 7
+baseurl=http://openstack:8080/epel/
+gpgcheck=0
+enabled=1
+
+[centos-openstack-ocata]
+name=OpenStack packages
+baseurl=http://openstack:8080/centos-openstack-ocata/
+gpgcheck=0
+enabled=1
+
+[nginx]
+name=NGINX Repo
+baseurl=http://openstack:8080/nginx/
+gpgcheck=0
+enabled=1

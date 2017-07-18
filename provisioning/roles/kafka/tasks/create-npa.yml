@@ -1,0 +1,14 @@
+---
+- name: Create kafka group
+  group: 
+    name: kafka
+    state: present
+    system: yes
+
+- name: Create kafka user
+  user: 
+    name: kafka
+    group: kafka
+    comment: "kafka default user"
+    shell: /bin/bash
+    system: yes

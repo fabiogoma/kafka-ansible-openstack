@@ -1,0 +1,27 @@
+---
+- name: Configure /etc/hosts 
+  copy:
+    src: hosts
+    dest: /etc/hosts
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Identify configured repos
+  find: path=/etc/yum.repos.d/ file_type=file
+  register: repos
+
+- name: Remove all configured repos
+  file:
+    state: absent
+    path: "{{ item.path }}"
+  with_items: 
+    - "{{ repos.files }}"
+
+- name: Install local repositories
+  copy:
+    src: local.repo
+    dest: /etc/yum.repos.d/local.repo
+    owner: root
+    group: root
+    mode: 0644
