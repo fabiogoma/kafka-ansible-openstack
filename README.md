@@ -5,14 +5,14 @@ In this project you will find infrastructure as code to provision from the scrat
 
 # Used tools
 The used tools for this solution are mainly open source, you can check the list below:
-OpenStack
-CentOS (OS on the OpenStack cloud)
-Fedora (OS on my personal laptop)
-Vagrant
-Ansible
-Zookeeper
-Kafka
-mDNS (Avahi Daemon)
+* OpenStack
+* CentOS (OS on the OpenStack cloud)
+* Fedora (OS on my personal laptop)
+* Vagrant
+* Ansible
+* Zookeeper
+* Kafka
+* mDNS (Avahi Daemon)
 
 # How?
 For now, this project work only on Linux machines, feel free to port it to any other platform.
